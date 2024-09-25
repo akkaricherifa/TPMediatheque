@@ -14,7 +14,9 @@ public class Book extends Item {
 
 	public void setAuthor(String author) {
 		this.author = author;
-	}	
+	}
+
+
 
 	public void print() {
 		System.out.println(this);
@@ -22,7 +24,11 @@ public class Book extends Item {
 
 	@Override
 	public String toString() {
-		return "Livre : " + super.toString() + " de " + author;
+		return "Book : " + super.toString() + " de " + author;
 	}
-	
+
+	@Override
+	public void accept (Visitor visitor) {
+
+	}
 }
