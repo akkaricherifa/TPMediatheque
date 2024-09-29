@@ -1,6 +1,7 @@
 package mediatheque;
 
 public abstract class Item {
+	public abstract void accept(Visitor visitor);
 	private String title;
 
 	protected Item(String title) {
@@ -18,7 +19,7 @@ public abstract class Item {
 
 	@Override
 	public String toString() {
-		return title;
+		return "title=" + title ;
 	}
 	
 }

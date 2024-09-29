@@ -31,4 +31,5 @@ public class Book extends Item {
 	public void accept (Visitor visitor) {
 
 	}
+
 }
